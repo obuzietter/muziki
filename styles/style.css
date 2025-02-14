@@ -123,7 +123,7 @@ header .login .login-btn:hover {
 }
 
 main {
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: var(--first-color);
 }
 
@@ -185,8 +185,7 @@ main .features {
 main .features .feature {
     text-align: center;
     padding: 1.5rem;
-    
-    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    /* perspective: 1000px; */
 }
 
 main .features .feature img {
@@ -194,6 +193,17 @@ main .features .feature img {
     height: 200px;
     object-fit: cover;
     border-radius: 0.25rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 5px 5px 6px;
+
+    
+
+    transition: all 0.3s ease;
+}
+
+main .features .feature img:hover {
+   
+    scale: 1.1;
+
 }
 
 main .features .feature h2 {
@@ -211,10 +221,11 @@ main .cta {
     align-items: center;
     padding: 1rem;
     background-color: var(--second-color);
-    border-radius: var(--border-radius);
+    /* border-radius: var(--border-radius); */
     position: sticky;
     bottom: 0;
     top: 0;
+    transition: all 0.3s ease;
 }
 
 main .cta h2 {
@@ -314,4 +325,3 @@ footer .footer-legal p {
     color: var(--fourth-color);
 }
 
-/* Responsive */
