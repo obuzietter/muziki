@@ -256,13 +256,48 @@ main .hero .content a .wave-menu {
     animation-delay: 0.15s;
   }
   
+/* cta styling */
+main .cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--second-color);
+    /* border-radius: var(--border-radius); */
+    position: sticky;
+    bottom: 0;
+    top: 0;
+    transition: all 0.3s ease;
+}
 
+main .cta h2 {
+    margin-right: 1rem;
+}
+
+main .cta button {
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    background-color: var(--third-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+main .cta button:hover {
+    background-color: var(--fourth-color);
+    scale: 1.1;
+    
+}
 
 main .features {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 1rem;
+    flex-wrap: wrap;
 }
 
 main .features .feature {
@@ -296,39 +331,6 @@ main .features .feature h2 {
 main .features .feature p {
     margin: 1rem 0;
 }
-
-/* cta styling */
-main .cta {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--second-color);
-    /* border-radius: var(--border-radius); */
-    position: sticky;
-    bottom: 0;
-    top: 0;
-    transition: all 0.3s ease;
-}
-
-main .cta h2 {
-    margin-right: 1rem;
-}
-
-main .cta button {
-    padding: 0.5rem 1rem;
-    background-color: var(--third-color);
-    color: var(--white-color);
-    border: none;
-    border-radius: 0.25rem;
-    cursor: pointer;
-}
-
-main .cta button:hover {
-    background-color: var(--fourth-color);
-}
-
-
 
 footer {
     background-color: var(--second-color);
