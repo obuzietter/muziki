@@ -44,7 +44,7 @@ header .search {
 }
 
 header .search input[type="text"] {
-    padding: 0.5rem;
+    padding: 1rem;
     border: none;
     border-radius: 0.25rem;
     outline: none;
@@ -58,7 +58,7 @@ header .search input[type="text"]:focus {
 }
 
 
-header .search button {
+/* header .search button {
     padding: 0.5rem 1rem;
     background-color: var(--third-color);
     color: var(--white-color);
@@ -66,11 +66,11 @@ header .search button {
     border-radius: 0.25rem;
     cursor: pointer;
 
-}
+} */
 
-header .search button:hover {
+/* header .search button:hover {
     background-color: var(--fourth-color);
-}
+} */
 
 header .login {
     display: flex;
@@ -80,32 +80,43 @@ header .login {
 }
 
 header .login .signup-btn {
-    padding: 0.5rem 1rem;
+    padding: 1rem 1.5rem;
     margin: 0 0.5rem;
     background-color: var(--third-color);
     color: var(--white-color);
+    outline: 2px solid var(--third-color);
     border: none;
     border-radius: 0.25rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 header .login .signup-btn:hover {
     background-color: var(--fourth-color);
+    scale: 1.1;
+    outline: 2px solid var(--fourth-color);
 }
 
 header .login .login-btn {
     padding: 0.5rem 1rem;
     margin: 0 0.5rem;
-    background-color: var(--third-color);
-    color: var(--white-color);
+    /* background-color: var(--third-color); */
+    outline: 2px solid var(--third-color);
     border: none;
+    color: var(--third-color);
+    font-weight: bold;
     border-radius: 0.25rem;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 header .login .login-btn:hover {
     background-color: var(--fourth-color);
+    color: var(--white-color);
+    scale: 1.1;
 }
+
+/* main styling */
 
 main {
     /* padding: 1rem; */
@@ -136,6 +147,12 @@ main .hero .image img {
     object-fit: cover;
 }
 
+main .hero .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 main .hero .content h1 {
     font-size: 3rem;
@@ -147,7 +164,7 @@ main .hero .content p {
     margin-bottom: 1rem;
 }
 
-main .hero .content button {
+/* main .hero .content button {
     padding: 0.5rem 1rem;
     background-color: var(--third-color);
     color: var(--white-color);
@@ -158,7 +175,88 @@ main .hero .content button {
 
 main .hero .content button:hover {
     background-color: var(--fourth-color);
-}
+} */
+
+/* From Uiverse.io by JkHuger */ 
+main .hero .content a .wave-menu {
+    border: 4px solid var(--third-color);
+    border-radius: 50px;
+    width: 200px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    transition: ease 0.2s;
+    position: relative;
+    transition: all 0.3s ease;
+    
+  }
+  
+  main .hero .content a .wave-menu li {
+    list-style: none;
+    height: 30px;
+    width: 4px;
+    border-radius: 10px;
+    background: var(--third-color);
+    margin: 0 6px;
+    padding: 0;
+    animation-name: wave1;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition: ease 0.2s;
+  }
+  
+  main .hero .content a .wave-menu:hover > li {
+    background: var(--white-color);
+  }
+  
+  main .hero .content a .wave-menu:hover {
+    background: var(--third-color);
+    scale: 1.1;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(2) {
+    animation-name: wave2;
+    animation-delay: 0.2s;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(3) {
+    animation-name: wave3;
+    animation-delay: 0.23s;
+    animation-duration: 0.4s;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(4) {
+    animation-name: wave4;
+    animation-delay: 0.1s;
+    animation-duration: 0.3s;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(6) {
+    animation-name: wave2;
+    animation-duration: 0.5s;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(8) {
+    animation-name: wave4;
+    animation-delay: 0.4s;
+    animation-duration: 0.25s;
+  }
+  
+  main .hero .content a .wave-menu li:nth-child(9) {
+    animation-name: wave3;
+    animation-delay: 0.15s;
+  }
+  
+
 
 main .features {
     display: flex;
@@ -341,3 +439,44 @@ footer .footer-legal ul li a:hover {
 footer .footer-legal p {
     color: var(--fourth-color);
 }
+
+@keyframes wave1 {
+    from {
+      transform: scaleY(1);
+    }
+  
+    to {
+      transform: scaleY(0.5);
+    }
+  }
+  
+  @keyframes wave2 {
+    from {
+      transform: scaleY(0.3);
+    }
+  
+    to {
+      transform: scaleY(0.6);
+    }
+  }
+  
+  @keyframes wave3 {
+    from {
+      transform: scaleY(0.6);
+    }
+  
+    to {
+      transform: scaleY(0.8);
+    }
+  }
+  
+  @keyframes wave4 {
+    from {
+      transform: scaleY(0.2);
+    }
+  
+    to {
+      transform: scaleY(0.5);
+    }
+  }
+  
