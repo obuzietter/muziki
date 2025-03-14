@@ -1,0 +1,57 @@
+       
+/* Background with animated gradient */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, var(--second-color), var(--third-color));
+    background-size: 200% 200%;
+    animation: backgroundAnimation 5s infinite alternate;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: var(--white-color);
+}
+
+/* loader container */
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Text styling with animation */
+h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--white-color);
+    animation: fadeInOut 2s infinite alternate;
+}
+
+/* Animated spinner */
+.loader {
+    margin-top: 20px;
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-top: 4px solid var(--first-color);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+/* Keyframe animations */
+@keyframes fadeInOut {
+    0% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes backgroundAnimation {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
