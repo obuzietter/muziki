@@ -261,6 +261,8 @@ main .cta {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
     padding: 1rem;
     background-color: var(--second-color);
     /* border-radius: var(--border-radius); */
@@ -272,6 +274,7 @@ main .cta {
 
 main .cta h2 {
     margin-right: 1rem;
+    text-align: center;
 }
 
 main .cta button {
