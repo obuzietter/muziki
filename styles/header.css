@@ -1,0 +1,117 @@
+
+header {
+    /* background-color: var(--second-color); */
+    backdrop-filter: blur(5px);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    color: var(--fourth-color);
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    color: var(--third-color);
+}
+
+header nav ul li a .active {
+    color: var(--third-color);
+    outline: 2px solid var(--third-color);
+}
+
+header .search {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    /* border: 2px solid var(--third-color); */
+    /* margin-top: 1rem; */
+}
+
+header .search input[type="text"] {
+    padding: 1rem;
+    border: none;
+    border-radius: 0.25rem;
+    outline: none;
+    margin: 0 0.5rem;
+    background-color: antiquewhite;
+    width: 50%;
+}
+
+header .search input[type="text"]:focus {
+    box-shadow: 0 0 0 3px rgba(133, 72, 54, 0.5);
+}
+
+
+/* header .search button {
+    padding: 0.5rem 1rem;
+    background-color: var(--third-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+
+} */
+
+/* header .search button:hover {
+    background-color: var(--fourth-color);
+} */
+
+header .login {
+    display: flex;
+    
+    justify-content: center;
+    /* border: 2px solid var(--third-color); */
+}
+
+header .login .signup-btn {
+    padding: 1rem 1.5rem;
+    margin: 0 0.5rem;
+    background-color: var(--third-color);
+    color: var(--white-color);
+    outline: 2px solid var(--third-color);
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .login .signup-btn:hover {
+    background-color: var(--fourth-color);
+    scale: 1.1;
+    outline: 2px solid var(--fourth-color);
+}
+
+header .login .login-btn {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    /* background-color: var(--third-color); */
+    outline: 2px solid var(--third-color);
+    border: none;
+    color: var(--third-color);
+    font-weight: bold;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+header .login .login-btn:hover {
+    background-color: var(--fourth-color);
+    color: var(--white-color);
+    scale: 1.1;
+}

@@ -1,0 +1,101 @@
+aside {
+    max-width: 400px;
+    display: flex;
+    padding: 0 1rem;
+    border: 1px solid var(--third-color);
+}
+aside .sidebar {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--third-color);
+}
+
+aside .sidebar .head-actions{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--third-color);
+    color: var(--white-color);
+    border-radius: 0.25rem;
+}
+
+aside .sidebar .head-actions .btns a{
+   text-decoration: none;
+   color: var(--white-color);
+    cursor: pointer;
+}
+
+aside .sidebar .head-pills ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 1rem;
+    color: var(--white-color);
+    border-radius: 0.25rem;
+    overflow-x: scroll;
+}
+
+aside .sidebar .head-pills ul::-webkit-scrollbar{
+    width: 0;
+    background-color: transparent;
+}
+/*
+aside .sidebar .head-pills ul::-webkit-scrollbar-thumb{
+    background: var(--fourth-color);
+    border-radius: 0.25rem;
+} */
+
+
+
+
+aside .sidebar .head-pills ul li{
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--third-color);
+    border-radius: 2rem;
+
+}
+
+aside .sidebar .head-pills ul li a{
+    text-decoration: none;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+aside .sidebar .playlists ul{ 
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+aside .sidebar .playlists ul li{
+    margin: .2rem 1rem;
+    /* border: 1px solid var(--third-color); */
+    border-radius: 1rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+aside .sidebar .playlists ul li a{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    /* border-bottom: 1px solid var(--third-color); */
+    text-decoration: none;
+    color: var(--fourth-color);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+main .main-content{
+    flex: 1;
+    border: 1px solid var(--third-color);
+}

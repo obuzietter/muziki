@@ -1,23 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Library</title>
-</head>
-<body>
-    <h1>My Library</h1>
-    <p>Here are the songs you have saved:</p>
-    <ul>
-        <li>Song 1</li>
-        <li>Song 2</li>
-        <li>Song 3</li>
-        <li>Song 4</li>
-        <li>Song 5</li>
-    </ul>
-    <a href="index.html">Back to Home</a>
+    <link rel="stylesheet" href="../styles/theme.css">
+    <link rel="icon" href="../media/muziki-logo.png" type="image/png">
+    <!-- links to header and footer -->
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
 
-    
-    
+    <link rel="stylesheet" href="../styles/library.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+
+                <li><a href="library.html">Your Library</a></li>
+            </ul>
+        </nav>
+        <div class="search">
+            <input type="text" placeholder="Type Here To Search ...">
+            <!-- <button>Search</button> -->
+        </div>
+        <div class="login">
+            <button class="signup-btn">Sign Up</button>
+            <button class="login-btn">Log In</button>
+        </div>
+    </header>
+    <main>
+
+        <aside>
+            <div class="sidebar">
+                <div class="head-actions">
+                    <div class="title">
+                        <h3>My Library</h3>
+                    </div>
+                    <div class="btns">
+                        <a href="#" class="create-playlist"><svg xmlns="http://www.w3.org/2000/svg" width="32"
+                                height="32" fill="currentColor" class="bi bi-plus-circle-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z" />
+                            </svg></a>
+                        <a href="#" class="liked-songs">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                                class="bi bi-heart" viewBox="0 0 16 16">
+                                <path
+                                    d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="head-pills">
+                    <ul>
+                        <li><a href="">Songs</a></li>
+                        <li><a href="">Albums</a></li>
+                        <li><a href="">Artists</a></li>
+                        <li><a href="">Playlists</a></li>
+                    </ul>
+                </div>
+                <div class="playlists">
+                    <ul>
+                        <li><a href="">
+                                <div class="avatar">
+                                    <img src="https://img.freepik.com/free-vector/retro-vinyl-music-record-emblem_98292-4131.jpg?uid=R97350360&ga=GA1.1.569336961.1721632028&semt=ais_hybrid"
+                                        alt="Playlist 1" width="100px">
+                                </div>
+                                <div class="playlist-info">
+                                    <h4>Playlist 1</h4>
+                                    <p>5 songs</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <div class="avatar">
+                                    <img src="https://img.freepik.com/free-vector/retro-vinyl-music-record-emblem_98292-4131.jpg?uid=R97350360&ga=GA1.1.569336961.1721632028&semt=ais_hybrid"
+                                        alt="Playlist 1" width="100px">
+                                </div>
+                                <div class="playlist-info">
+                                    <h4>Playlist 1</h4>
+                                    <p>5 songs</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <div class="avatar">
+                                    <img src="https://img.freepik.com/free-vector/retro-vinyl-music-record-emblem_98292-4131.jpg?uid=R97350360&ga=GA1.1.569336961.1721632028&semt=ais_hybrid"
+                                        alt="Playlist 1" width="100px">
+                                </div>
+                                <div class="playlist-info">
+                                    <h4>Playlist 1</h4>
+                                    <p>5 songs</p>
+                                </div>
+                            </a></li>
+                        <li><a href="">
+                                <div class="avatar">
+                                    <img src="https://img.freepik.com/free-vector/retro-vinyl-music-record-emblem_98292-4131.jpg?uid=R97350360&ga=GA1.1.569336961.1721632028&semt=ais_hybrid"
+                                        alt="Playlist 1" width="100px">
+                                </div>
+                                <div class="playlist-info">
+                                    <h4>Playlist 1</h4>
+                                    <p>5 songs</p>
+                                </div>
+                            </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </aside>
+        <section class="main-content">
+           
+
+        </section>
+    </main>
+    <footer>
+        <!-- footer content       -->
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="../media/muziki-logo.png" alt="Muziki">
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Jobs</a></li>
+                    <li><a href="">Press</a></li>
+                    <li><a href="">News</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Accessibility</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">Legal</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">Cookie Preferences</a></li>
+                    <li><a href="">Corporate</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-social">
+            <ul>
+                <li><a href=""><img src="../media/facebook.png" alt="Facebook" width="32px"></a></li>
+                <li><a href=""><img src="../media/twitter.png" alt="Twitter" width="32px"></a></li>
+                <li><a href=""><img src="../media/instagram.png" alt="Instagram" width="32px"></a></li>
+            </ul>
+        </div>
+
+        <div class="footer-legal">
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Cookie Policy</a></li>
+            </ul>
+            <hr width="100%">
+            <p>&copy; 2023 Muziki</p>
+        </div>
+
+
+    </footer>
 </body>
+
 </html>
